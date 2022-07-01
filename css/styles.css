@@ -579,8 +579,9 @@ ul {
 
 .icon-send {
   position: absolute;
-  right: 25px;
-  top: 12px;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* CSS Portfolio.html */
