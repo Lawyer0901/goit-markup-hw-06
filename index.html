@@ -499,6 +499,62 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <div class="modal-form">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form>
+            <div class="container-form">
+              <label class="label-text label">
+                <span class="span-form">Имя</span>
+                <input class="input-text input-form" type="text" name="text" />
+                <svg class="icon-form" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="container-form">
+              <label>
+                <span class="span-form">Телефон</span>
+                <input class="input-tel input-form" type="tel" name="tel" />
+
+                <svg class="icon-form" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="container-form">
+              <label>
+                <span class="span-form">Почта</span>
+                <input
+                  class="input-email input-form"
+                  type="email"
+                  name="email"
+                />
+
+                <svg class="icon-form" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </label>
+            </div>
+            <label>
+              <span class="span-form">Комментарий</span>
+              <textarea
+                class="textarea"
+                name="feedback"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+            <input type="checkbox" />
+            <span class="form-condition"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="condition-link" href="#">Условия договора</a>
+            </span>
+            <button class="button-form" type="submit">Отправить</button>
+          </form>
+        </div>
+
         <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-icon" width="18" height="18">
             <use href="./images/close.svg#icon-close-black"></use>
