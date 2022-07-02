@@ -674,12 +674,13 @@ ul {
 }
 
 .input-form:hover,
-.input-form:focus {
+.input-form:focus-within {
   outline: none;
   border-color: var(--text-link-color);
+}
+.input-form:not(:placeholder-shown) ~ .icon-form {
   fill: var(--text-link-color);
 }
-
 .container-form {
   position: relative;
 }
