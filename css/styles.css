@@ -684,6 +684,7 @@ ul {
 .container-form {
   position: relative;
 }
+
 .icon-form {
   position: absolute;
   top: 50%;
@@ -707,6 +708,34 @@ ul {
   border-color: var(--text-link-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label {
+  padding-left: 25px;
+}
+.checkbox:checked + .check-icon {
+  background-image: url(../images/iconcheck.svg);
+}
+.check-icon {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/Vector.svg);
+  margin-left: -25px;
+  margin-top: 6px;
+
+  /* border: 1px solid #212121;
+  border-radius: 4px; */
+}
 /* CSS Portfolio.html */
 
 /* MAIN-LIST */
