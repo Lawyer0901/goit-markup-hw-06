@@ -480,18 +480,18 @@
           <div class="footer-form">
             <h2 class="form-title">Подпишитесь на рассылку</h2>
             <form>
-              <div class="form">
-                <input
-                  class="input-footer"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-                <button class="footer-button" type="submit">Подписаться</button>
+              <input
+                class="input-footer"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="footer-button" type="submit">
+                Подписаться
                 <svg class="icon-send" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
-              </div>
+              </button>
             </form>
           </div>
         </div>
@@ -510,7 +510,7 @@
             >
             <label>
               Имя
-              <div class="form-field">
+              <span class="form-field">
                 <input
                   class="form-input input-field"
                   type="text"
@@ -521,11 +521,11 @@
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-person"></use>
                 </svg>
-              </div>
+              </span>
             </label>
             <label>
               Телефон
-              <div class="form-field">
+              <span class="form-field">
                 <input
                   class="form-input input-field"
                   type="tel"
@@ -536,11 +536,11 @@
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-phone"></use>
                 </svg>
-              </div>
+              </span>
             </label>
             <label>
               Почта
-              <div class="form-field">
+              <span class="form-field">
                 <input
                   class="form-input input-field"
                   type="email"
@@ -551,31 +551,26 @@
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg>
-              </div>
+              </span>
             </label>
-            <label>
+            <label class="form-label">
               Комментарий
+              <!-- ПРОВЕРИТЬ ТЕКСТ ПОДПРЫГИВАЕТ -->
               <textarea
                 class="textarea input-field"
                 name="feedback"
-                rows="5"
                 placeholder="Введите текст"
               ></textarea>
             </label>
           </div>
-          <div role="group" class="container-field">
-            <label class="checkbox-label">
-              <input
-                class="visually-hidden checkbox"
-                type="checkbox"
-                required
-              />
-              <span class="check-icon"></span>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="form-link" href="#">Условия договора</a>
-            </label>
-            <button class="form-button" type="submit">Отправить</button>
-          </div>
+
+          <label class="checkbox-label">
+            <input class="visually-hidden checkbox" type="checkbox" required />
+            <span class="check-icon"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="form-link" href="#">Условия договора</a>
+          </label>
+          <button class="form-button" type="submit">Отправить</button>
         </form>
 
         <button class="modal-button" type="button" data-modal-close>
